@@ -9,21 +9,15 @@ fis.config.set('roadmap.path', [
     // module 目录下的做组件化封装
     reg: '/es6/module/**.js', 
     isMod: true,
-    extras: {
-      isES6: true
-    }
+    isES6: true
   },
   {
     reg: '/es6/**.js',
-    extras: {
-      isES6: true
-    }
+    isES6: true
   },
   {
     reg: '**.js',
-    extras: {
-      isES6: false
-    }
+    isES6: false // 不是 es6 目录下的 js 不进行转换
   }
 ]);
 
