@@ -1,6 +1,9 @@
 /* global fis */
 
 fis.config.set('modules.parser.js', 'babel');
+//jswrapper 用来自动封装 `define`
+//require-async 用来支持动态加载组件
+fis.config.set('modules.postprocessor.js', 'jswrapper,require-async');
 fis.config.set('roadmap.path', [
   {
     // module 目录下的做组件化封装
